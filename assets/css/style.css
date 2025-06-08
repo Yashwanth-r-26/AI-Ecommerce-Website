@@ -1,10 +1,10 @@
 :root {
   --main-text-color: #555;
   --main-bg-color: #fff;
-  --accent-color: #ff523b;
+  --accent-color: #4c7ead;
   --hover-color: #563434;
   --slate-gray: #8a8a8a;
-  --smoth-pink: #ffd6d6;
+  --smoth-pink: #55a3d8;
 }
 
 *::selection {
@@ -113,7 +113,7 @@ p {
 }
 
 .header {
-  background: radial-gradient(#fff, #ffd6d6);
+  background: radial-gradient(#fff, #2d97c1);
 }
 
 .header .row {
@@ -199,7 +199,7 @@ h4 {
 
 /*     offer     */
 .offer {
-  background: radial-gradient(#fff, #ffd6d6);
+  background: radial-gradient(#fff, #2d97c1);
   margin-top: 80px;
   padding: 30px 0;
 }

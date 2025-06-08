@@ -3,16 +3,68 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Red store | Ecommerce Website Design</title>
+    <title>FitZone | Ecommerce Store</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <style>
+      #chatbot {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 300px;
+        max-height: 400px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        font-family: 'Poppins', sans-serif;
+        z-index: 1000;
+      }
+      #chatbot-header {
+        background-color: #ff523b;
+        color: white;
+        padding: 10px;
+        font-weight: bold;
+        text-align: center;
+      }
+      #chatbox {
+        flex: 1;
+        padding: 10px;
+        overflow-y: auto;
+        font-size: 14px;
+      }
+      #chat-input {
+        display: flex;
+        border-top: 1px solid #ddd;
+      }
+      #chat-input input {
+        flex: 1;
+        padding: 10px;
+        border: none;
+        outline: none;
+        font-size: 14px;
+      }
+      #chat-input button {
+        background-color: #ff523b;
+        border: none;
+        color: white;
+        padding: 10px 15px;
+        cursor: pointer;
+      }
+      .user-msg {
+        text-align: right;
+        color: #333;
+        margin: 5px 0;
+      }
+      .bot-msg {
+        text-align: left;
+        color: #555;
+        margin: 5px 0;
+      }
+    </style>
   </head>
   <body>
     <div class="header">
@@ -20,7 +72,7 @@
         <div class="navbar">
           <div class="logo">
             <a href="index.html">
-              <img src="./assets/images/logo.png" alt="" width="125px"
+              <img src="./assets/images/logos.png" alt="" width="125px"
             /></a>
           </div>
           <nav>
@@ -50,8 +102,9 @@
               a new Style!
             </h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />
-              Voluptas rerum maiores animi officiis
+              We provide the best fitness equipment<br />
+              at the best prices. <br />
+              <strong>Shop Now!</strong>
             </p>
             <a href="" class="btn">Explore Now &#8594;</a>
           </div>
@@ -98,7 +151,7 @@
 
         <div class="col-4">
           <img src="./assets/images/product-2.jpg" alt="" />
-          <h4>Red Printed T-shirt</h4>
+          <h4>HRX Shoes</h4>
           <div class="rating">
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
@@ -111,7 +164,7 @@
 
         <div class="col-4">
           <img src="./assets/images/product-3.jpg" alt="" />
-          <h4>Red Printed T-shirt</h4>
+          <h4>Track Pants</h4>
           <div class="rating">
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
@@ -123,7 +176,7 @@
         </div>
         <div class="col-4">
           <img src="./assets/images/product-4.jpg" alt="" />
-          <h4>Red Printed T-shirt</h4>
+          <h4>Puma T-shirt</h4>
           <div class="rating">
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
@@ -138,7 +191,7 @@
       <div class="row">
         <div class="col-4">
           <img src="./assets/images/product-5.jpg" alt="" />
-          <h4>Red Printed T-shirt</h4>
+          <h4>Grey Shoes</h4>
           <div class="rating">
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
@@ -151,7 +204,7 @@
 
         <div class="col-4">
           <img src="./assets/images/product-6.jpg" alt="" />
-          <h4>Red Printed T-shirt</h4>
+          <h4>Puma Roundneck T-Shirt</h4>
           <div class="rating">
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
@@ -164,7 +217,7 @@
 
         <div class="col-4">
           <img src="./assets/images/product-7.jpg" alt="" />
-          <h4>Red Printed T-shirt</h4>
+          <h4>Socks for Men by HRX</h4>
           <div class="rating">
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
@@ -176,7 +229,7 @@
         </div>
         <div class="col-4">
           <img src="./assets/images/product-8.jpg" alt="" />
-          <h4>Red Printed T-shirt</h4>
+          <h4>FOSSIL Watch</h4>
           <div class="rating">
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
@@ -190,7 +243,7 @@
       <div class="row">
         <div class="col-4">
           <img src="./assets/images/product-9.jpg" alt="" />
-          <h4>Red Printed T-shirt</h4>
+          <h4>Roadster Watch</h4>
           <div class="rating">
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
@@ -203,7 +256,7 @@
 
         <div class="col-4">
           <img src="./assets/images/product-10.jpg" alt="" />
-          <h4>Red Printed T-shirt</h4>
+          <h4>SPARX Black Shoes</h4>
           <div class="rating">
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
@@ -216,7 +269,7 @@
 
         <div class="col-4">
           <img src="./assets/images/product-11.jpg" alt="" />
-          <h4>Red Printed T-shirt</h4>
+          <h4>Jogging Shoes</h4>
           <div class="rating">
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
@@ -228,7 +281,7 @@
         </div>
         <div class="col-4">
           <img src="./assets/images/product-12.jpg" alt="" />
-          <h4>Red Printed T-shirt</h4>
+          <h4>Black Track Pant</h4>
           <div class="rating">
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
@@ -255,7 +308,7 @@
               >Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Excepturi rerum maiores eveniet minus ut deserunt vitae
             </small>
-            <a href="" class="btn">Buy Now &#8594;</a>
+            <a href="https://www.mi.com/uk/mi-smart-band-4/" class="btn">Buy Now &#8594;</a>
           </div>
         </div>
       </div>
@@ -327,27 +380,38 @@
 
     <!-- Brands -->
 
-    <div class="brands">
-      <div class="small-container">
-        <div class="row">
-          <div class="col-5">
-            <img src="./assets/images/logo-godrej.png" alt="" />
-          </div>
-          <div class="col-5">
-            <img src="./assets/images/logo-oppo.png" alt="" />
-          </div>
-          <div class="col-5">
-            <img src="./assets/images/logo-paypal.png" alt="" />
-          </div>
-          <div class="col-5">
-            <img src="./assets/images/logo-philips.png" alt="" />
-          </div>
-          <div class="col-5">
-            <img src="./assets/images/logo-coca-cola.png" alt="" />
-          </div>
-        </div>
+<div class="brands">
+  <div class="small-container">
+    <div class="row">
+      <div class="col-5">
+        <a href="https://www.godrej.com">
+          <img src="./assets/images/logo-godrej.png" alt="Godrej Logo" />
+        </a>
+      </div>
+      <div class="col-5">
+        <a href="https://www.oppo.com">
+          <img src="./assets/images/logo-oppo.png" alt="Oppo Logo" />
+        </a>
+      </div>
+      <div class="col-5">
+        <a href="https://www.paypal.com">
+          <img src="./assets/images/logo-paypal.png" alt="Paypal Logo" />
+        </a>
+      </div>
+      <div class="col-5">
+        <a href="https://www.philips.com">
+          <img src="./assets/images/logo-philips.png" alt="Philips Logo" />
+        </a>
+      </div>
+      <div class="col-5">
+        <a href="https://www.coca-cola.com">
+          <img src="./assets/images/logo-coca-cola.png" alt="Coca-Cola Logo" />
+        </a>
       </div>
     </div>
+  </div>
+</div>
+
 
     <!-- Footer -->
     <div class="footer">
@@ -367,8 +431,7 @@
           <div class="footer-col-2">
             <img src="./assets/images/logo-white.png" alt="" />
             <p>
-              Lorem, ipsum dolor sit amet consectetur <br />adipisicing elit.
-              Porro, eum?
+              
             </p>
           </div>
           <div class="footer-col-3">
@@ -392,11 +455,120 @@
           </div>
         </div>
         <hr />
-        <p class="copyright" id="copyright-text">Copyright 2020 - introidx</p>
       </div>
     </div>
-    
+<style>
+  #chatbox {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #fefefe;
+    padding: 15px;
+    border-radius: 15px;
+    width: 320px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    font-family: 'Segoe UI', sans-serif;
+    z-index: 999;
+  }
+
+  #chatLog {
+    height: 230px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 10px;
+    background: #fafafa;
+  }
+
+  .user-msg,
+  .bot-msg {
+    margin: 8px 0;
+    padding: 10px 14px;
+    border-radius: 18px;
+    max-width: 80%;
+    display: inline-block;
+    clear: both;
+    line-height: 1.4;
+  }
+
+  .user-msg {
+    background-color: #dcf8c6;
+    align-self: flex-end;
+    float: right;
+  }
+
+  .bot-msg {
+    background-color: #f1f0f0;
+    float: left;
+  }
+
+  #userInput {
+    width: 72%;
+    padding: 8px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    outline: none;
+  }
+
+  #sendBtn {
+    width: 25%;
+    padding: 8px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+
+  #sendBtn:hover {
+    background-color: #45a049;
+  }
+</style>
+
+<div id="chatbox">
+  <div id="chatLog"></div>
+  <input type="text" id="userInput" placeholder="Ask me something..." />
+  <button id="sendBtn" onclick="sendMessage()">Send</button>
+</div>
+
+<script>
+  async function sendMessage() {
+    const input = document.getElementById('userInput');
+    const message = input.value.trim();
+    if (!message) return;
+
+    appendMessage('user', message);
+    input.value = '';
+
+    try {
+      const response = await fetch('http://localhost:3001/chat', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ message })
+      });
+
+      const data = await response.json();
+      appendMessage('bot', data.reply);
+    } catch (error) {
+      appendMessage('bot', 'Sorry, something went wrong.');
+      console.error('Error:', error);
+    }
+  }
+
+  function appendMessage(sender, text) {
+    const chatLog = document.getElementById('chatLog');
+    const msgDiv = document.createElement('div');
+    msgDiv.className = sender === 'user' ? 'user-msg' : 'bot-msg';
+    msgDiv.innerText = text;
+    chatLog.appendChild(msgDiv);
+    chatLog.scrollTop = chatLog.scrollHeight;
+  }
+</script>
+
+
     <!-- scripts -->
     <script src="../assets/js/toggleMenu.js"></script>
+
   </body>
 </html>
